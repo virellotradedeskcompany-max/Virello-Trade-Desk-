@@ -7,12 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="game-container">
-        <h1>Arrange the Word</h1>
-        <div id="stats">Score: <span id="score">0</span> | Best: <span id="best">0</span></div>
-        <div id="game-ui"></div>
-        <button id="hint-btn" onclick="showHint()">Need a Hint?</button>
+
+    <div id="home-screen">
+        <h1>Word Arrange Pro</h1>
+        <p>Test your brain against the clock!</p>
+        <button onclick="startGame()" style="background:#22c55e;">START GAME</button>
+        <p><small>Note: Ads help support development.</small></p>
     </div>
+
+    <div id="game-container" style="display:none;">
+        <h1>Word Arrange Pro</h1>
+        <div id="stats">Level: <span id="level">1</span> | Score: <span id="score">0</span></div>
+        <div id="game-ui"></div>
+        <button id="hint-btn" onclick="showHint()">Get Hint</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
+
